@@ -17,7 +17,7 @@
     margin-top: 100px;
 }
 
-#form-user {
+#registrationForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,12 +25,12 @@
     gap: 10px;
 }
 
-#form-user input {
+#registrationForm input {
     padding: 10px 20px;
     border-radius: 20px;
 }
 
-#form-user button {
+#registrationForm button {
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;

@@ -11,18 +11,30 @@
 <body>
 	<div class="container">
 		<div class="form-user-interface">
-			<form id="form-user">
-				<input type="text" placeholder="email" id="input-email" required>
-				<input type="text" placeholder="last name" id="input-last-name" required>
-				<input type="text" placeholder="first name" id="input-first-name" required>
-				<input type="text" placeholder="user name" id="input-user-name" required>
-				<input type="password" placeholder="password" id="password" required>
-				<input type="password" placeholder="confirm password" id="confirm-password" required>
-				<button type="submit">Save</button>
+			<form id="registrationForm" onsubmit="event.preventDefault(); validateForm();">
+				<label for="username">User Name:</label>
+				<input type="text" id="username" name="username" minlength="3" required>
+
+				<label for="firstName">First Name:</label>
+				<input type="text" id="firstName" name="firstName" minlength="3" required>
+
+				<label for="lastName">Last Name:</label>
+				<input type="text" id="lastName" name="lastName" minlength="3" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" minlength="3" maxlength="8" required>
+
+				<label for="confirmPassword">Confirm Password:</label>
+				<input type="password" id="confirmPassword" name="confirmPassword" minlength="3" maxlength="8" required>
+
+				<button type="button" onclick="validateForm()">Submit</button>
 			</form>
 		</div>
 	</div>
 
-<script src="./script.js"></script>
+	<script src="./script.js"></script>
 </body>
 </html>
